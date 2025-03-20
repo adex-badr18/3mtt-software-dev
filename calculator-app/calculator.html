@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator App</title>
+        <link rel="stylesheet" href="../main.css" />
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <main class="">
+            <h1 class="">Calculator App</h1>
+
+            <section class="calculator">
+                <input type="text" class="display" id="display" placeholder="0" disabled />
+
+                <div class="buttons">
+                    <button onclick="appendValue('+')" class="operator">+</button>
+                    <button onclick="appendValue('7')" class="button">7</button>
+                    <button onclick="appendValue('8')" class="button">8</button>
+                    <button onclick="appendValue('9')" class="button">9</button>
+                    <button onclick="appendValue('-')" class="operator">-</button>
+
+                    <button onclick="appendValue('4')" class="button">4</button>
+                    <button onclick="appendValue('5')" class="button">5</button>
+                    <button onclick="appendValue('6')" class="button">6</button>
+                    <button onclick="appendValue('×')" class="operator">×</button>
+
+                    <button onclick="appendValue('1')" class="button">1</button>
+                    <button onclick="appendValue('2')" class="button">2</button>
+                    <button onclick="appendValue('3')" class="button">3</button>
+                    <button onclick="appendValue('÷')" class="operator">÷</button>
+
+                    <button onclick="appendValue('.')" class="operator">.</button>
+                    <button onclick="appendValue('0')" class="">0</button>
+                    <button onclick="appendValue('00')" class="">00</button>
+                    <button onclick="calculate()" class="double operator">=</button>
+                    <button onclick="clearDisplay()" class="clear">C</button>
+                    
+                    <button onclick="deleteValue()" class="clear arrow">←</button>
+                </div>
+            </section>
+        </main>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
