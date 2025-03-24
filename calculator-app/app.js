@@ -3,11 +3,21 @@ function clearDisplay() {
 }
 
 function appendValue(value) {
-    document.getElementById("display").value += value;
+    const currentValue = document.getElementById("display").value;
+
+    if (!currentValue && value === "00") {
+        return;
+    } else {
+        document.getElementById("display").value += value;
+    }
 }
 
 function calculate() {
     try {
+        const currentValue = document.getElementById("display").value;
+
+        if (!currentValue) return;
+
         const expression = document.getElementById("display").value;
         const resolvedExpression = expression.replace(/[÷×]/g, (match) =>
             match === "×" ? "*" : "/"
