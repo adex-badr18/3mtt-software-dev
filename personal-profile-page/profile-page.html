@@ -11,23 +11,46 @@
     </head>
     <body>
         <header>
-            <h1>Badrudeen A. Abdul-hameed</h1>
-            <nav>
+            <h1 aria-label="Badrudeen A. Abdul-hameed">
+                Badrudeen A. Abdul-hameed
+            </h1>
+            <nav aria-label="Navigation menu">
                 <ul>
-                    <li><a href="#about" class="">About Me</a></li>
-                    <li><a href="#hobbies" class="">My Hobbies</a></li>
-                    <li><a href="#contact" class="">Contact Me</a></li>
+                    <li>
+                        <a
+                            href="#about"
+                            class=""
+                            aria-label="Link to About Me section"
+                            >About Me</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#hobbies"
+                            class=""
+                            aria-label="Link to My Hobbies section"
+                            >My Hobbies</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#contact"
+                            class=""
+                            aria-label="Link to Contact Me section"
+                            >Contact Me</a
+                        >
+                    </li>
                 </ul>
             </nav>
         </header>
 
-        <section id="about">
+        <section
+            id="about"
+            aria-label="About Me section that contains a brief personal summary and a profile image."
+        >
             <h2>About Me</h2>
-            <img
-                src="./assets/pic.png"
-                alt="Profile Picture"
-            />
-            <p>
+            <img src="./assets/pic.png" alt="Profile Picture" />
+            <p aria-label="Professional summary for Badrudeen">
                 Hello! My name is Badrudeen Adewumi Abdul-hameed. I am
                 passionate about web development and love creating new projects
                 that enhance user experiences. I enjoy learning new technologies
@@ -35,9 +58,12 @@
             </p>
         </section>
 
-        <section id="hobbies">
+        <section
+            id="hobbies"
+            aria-label="My Hobbies section that contains a list of my hobbies"
+        >
             <h2>My Hobbies</h2>
-            <ul>
+            <ul aria-label="List of my hobbies">
                 <li>Reading books</li>
                 <li>Coding and building web applications</li>
                 <li>Listening to tech talks</li>
@@ -45,11 +71,18 @@
             </ul>
         </section>
 
-        <section id="contact">
+        <section
+            id="contact"
+            aria-label="Contact Me section that contains my email address, GitHub URL, and LinkedIn URL"
+        >
             <h2>My Contact</h2>
-            <p>Email: adex.badr18@gmail.com</p>
-            <p>GitHub: https://github.com/adex-badr18</p>
-            <p>LinkedIn: https://linkedin.com/in/badruaa</p>
+            <p aria-label="Email address">Email: adex.badr18@gmail.com</p>
+            <p aria-label="GitHub URL">
+                GitHub: https://github.com/adex-badr18
+            </p>
+            <p aria-label="LinkedIn Profile URL">
+                LinkedIn: https://linkedin.com/in/badruaa
+            </p>
         </section>
 
         <footer>
