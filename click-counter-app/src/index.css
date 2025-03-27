@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+:root {
+    --bg-color: #f9fafb;
+    --primary-color: #111827;
+    --accent-color: #4f46e5;
+    --accent-hover: #4338ca;
+    --disabled-color: #9ca3af;
+    --limit-color: #ef4444;
+    --grey-color: #d1d5db;
+}
+
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: "Oxygen", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1.2rem;
+}
+
+.counter-display {
+    margin-bottom: 1.3rem;
+    padding: 2rem;
+    background-color: var(--bg-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey-color);
+}
+
+.count {
+    font-size: 7rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.limit-msg {
+    color: var(--limit-color);
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1 1 100px;
+}
+
+.increment-btn {
+    background-color: green;
+}
+
+.increment-btn:hover:not(:disabled) {
+  background-color: rgb(2, 168, 10);
+}
+
+.decrement-btn {
+    background-color: var(--limit-color);
+}
+
+.decrement-btn:hover:not(:disabled) {
+  background-color: rgb(206, 9, 9);
+}
+
+button:hover:not(:disabled) {
+    background-color: var(--accent-hover);
+}
+
+button:disabled {
+    background-color: var(--disabled-color);
+    cursor: not-allowed;
+}
+
+.limit-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    padding-top: 1.3rem;
+    border-top: 1px solid var(--grey-color);
+}
+
+.limit-input label {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.limit-input input {
+    padding: 0.5rem;
+    width: 100px;
+    border: 1px solid var(--grey-color);
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+
+    .app {
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+
+    button {
+        flex: 1 1 80px;
+    }
+}
